@@ -1,0 +1,238 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.landing-page {
+  text-align: center;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header nav ul li {
+  display: inline-block;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+  color: #f4f4f4;
+}
+
+.consult-button {
+  background: white;
+  color: #ee0979;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.consult-button:hover {
+  background: #ff6a00;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+  background: url("/Users/unnathibaskar/landing/src/img.jpg") no-repeat center center/cover;
+  color: white;
+  padding: 120px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.hero-overlay h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: transform 0.3s;
+}
+
+.buttons .primary {
+  background: #ff6a00;
+  color: white;
+}
+
+.buttons .secondary {
+  background: white;
+  color: #ee0979;
+}
+
+.buttons button:hover {
+  transform: scale(1.1);
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  color: white;
+  text-align: center;
+}
+
+.feature-box {
+  max-width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.feature-box:hover {
+  transform: scale(1.05);
+}
+
+.feature-box .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* About */
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.read-more {
+  background: #ee0979;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.read-more:hover {
+  transform: scale(1.1);
+}
+
+/* Services */
+.services {
+  background: url("/Users/unnathibaskar/landing/src/images1.jpg") no-repeat center center/cover;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  color: #f9f9f9;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-box {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.service-box .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  margin-top: 20px;
+}
